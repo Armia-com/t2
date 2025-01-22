@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #f7f3f3;
+    color: white;
+    padding:0px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    /* padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width:1170px; */
+
+}
+
+.header .link ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    position:absolute;
+    z-index: 3;
+    top: 50px;
+    right: 10px;
+    background-color: #ccc;
+   min-width: 200px;
+    border-radius: 8px;
+    /* transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s; */
+}
+
+.header .link:hover ul {
+    display: block;
+}
+.header .link ul::before {
+    content: '';
+    border-width: 10px;
+    border-color: transparent transparent #ccc  transparent;
+    border-style: solid;
+    position:absolute;
+    top:-20px;
+    right: 5px;
+
+    
+}
+.header .link ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .link ul li:last-child {
+    border-bottom: none;
+}
+
+.header .link a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Load Section */
+.load {
+    background-image: url(../css1/depositphotos_2125145-stock-photo-green-fields-the-blue-sky.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadtext {
+    text-align: center;
+    color: white;
+}
+
+.loadtext h1 {
+    font-size: 3rem;
+}
+
+/* Feature Section */
+.feature {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgba(227, 224, 220, 0.4);
+}
+
+.feature .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature .feet {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(225, 232, 232);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature .feet i {
+    font-size: 33px;
+    color: aquamarine;
+}
+
+/* Service Section */
+.service .container .part {
+    color: #ebeced;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+
+.zzzz {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -30px;
+}
+
+/* Content Section */
+.font {
+    padding: 5px 0px;
+}
+
+.car {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.car .far i{
+    font-size: 30px;
+    color: rgb(134, 153, 229);
+}
+.car .far p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.far {
+    background-color: rgb(254, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 49%;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* Profile Section */
+.profile .container {
+    text-align: center;
+}
+
+.profile .two {
+color: #ebeced;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+
+.photo-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.camera {
+    text-align: center;
+}
+
+.camera img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .feature .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .far {
+        /* width: 100%; */
+    }
+/* دي في الموبايل عايز تظهر كام صورة جنب بعض */
+    .photo-section {
+        /* grid-template-columns: 1fr 1fr 1; */
+    }
+}
+/* start about */
+
+.about .c1{
+    color: #ebeced;
+        font-size: 7rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+}
+.about .c2{
+    text-align: center;
+        font-size: 1.2rem;
+        margin-top: -30px;
+    }
+.about1{
+    display:flex;
+    justify-content: space-between;
+}
+.about1 .c3{
+    margin-left: 100px;
+    width: 60%;
+}
+.about1 .c3 p:first-of-type{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+}
+.about1 .c3 p:last-of-type {
+    font-weight: 200;
+}
+/* @media () */
+.about1 .c4{
+    position: relative;
+
+}
+.about1 .c4::before{
+    content: '';
+    border-color: rgb(255, 0, 0);
+    border-width: 40px;
+    height: 114px;
+    position: absolute;
+    top: -30px;
+    right: -18px;
+    border-style: solid;
+    z-index: -2;
+}
+.about1 .c4::after{
+    content: '';
+        border-color: rgb(255, 0, 0);
+        border-width: 30px;
+        height: 1px;
+        position: absolute;
+        bottom:80px;
+        right: -60px;
+        border-style: solid;
+        z-index: -1;
+}
+ .about1 .hh{
+    display: inline-block;
+    width: 50%;
+    border-color: rgb(255, 0, 0);
+}
+ .contact .x2 {
+     color: #ebeced;
+     font-size: 7rem;
+     font-weight: 900;
+     text-align: center;
+     margin: 0;
+ }
+
+ .contact .x1 {
+     text-align: center;
+     font-size: 1.2rem;
+     margin-top: -30px;
+ }
+ .contact{
+    background-color: #ccc;
+ }
+ .social{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(13, 218, 225);
+ }
+ .social .cc{
+    text-decoration: none;
+    color: rgb(30, 0, 255);
+ }
+ .xc{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .xc i{
+    font-size: 20px;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 10px;
+ }
+ .footer{
+    text-align: center;
+    background-color: rgb(204, 62, 14);
+    color: #333;
+    padding: 30px;
+ }
+ .footer span{
+    color: rgb(29, 0, 245);
+    font-weight: bolder;
+ }
+ @media (max-width:402px){
+.social{
+    font-size: 20px;
+}
+ }
+@media(max-width:600px){
+    .about1{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    /* end */
+    /* start contact */
+   
+  @media(max-width:600px){
+    .about1 .c4::after, 
+    .about1 .c4::before{
+        display: none;
+    }
+  }
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
